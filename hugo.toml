@@ -1,0 +1,70 @@
+baseURL = "https://natfifai.github.io/"
+languageCode = "en-us"
+title = "Fifer Digital"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  env = "production"
+  description = "Smart tools, templates, and guides to help you make money with AI, side hustles, and digital products."
+  author = "Fifer Digital"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  comments = false
+
+  [params.homeInfoParams]
+    Title = "Make Money Smarter"
+    Content = "AI tools, side hustle strategies, digital product guides, and business templates. Everything you need to build income streams that work."
+
+  [[params.socialIcons]]
+    name = "gumroad"
+    url = "https://fiferdigital.gumroad.com"
+
+[params.assets]
+  favicon = "/favicon.ico"
+  
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[[menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "blog"
+  name = "Blog"
+  url = "/posts/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "tools"
+  name = "Tools & Templates"
+  url = "/tools/"
+  weight = 3
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 4
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
